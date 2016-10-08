@@ -1,0 +1,75 @@
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $path-base: 'http://cdn.example.com/assets/';
+$path-base: '/assets/' !default;
+$path-font: '../font/';
+$path-Image: '../image/';
+
+/// Heading font family
+/// @type List
+$font-stack-heading: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;;
+/// Regular font family
+/// @type List
+$font-stack-text: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;;
+/// Code (monospace) font family
+/// @type List
+$font-stack-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;;
+
+// Sizes
+$size-site-width: 1240px;
+
+// Colors
+$color-black: #000;
+$color-white: #fff;
+
+/// Copy text color
+/// @type Color
+$color-text: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$color-brand: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$color-light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$color-mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$color-dark-grey: rgb(68, 68, 68) !default;
+
+
+// Z-indexes
+$layout: header, content, sidebar, popup;
+
+.header {
+    z-index: zindex($layout, header); // returns 1
+}
+
+.content {
+    z-index: zindex($layout, content); // returns 2
+}
+
+.sidebar {
+    z-index: zindex($layout, sidebar); // returns 3
+}
+
+.popup {
+    z-index: zindex($layout, popup); // returns 4
+}
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+    'x-small': '(max-width: 480px)',
+    'small': '(max-width: 768px)',
+    'medium': '(max-width: 1024px)',
+    'large': '(min-width: 1025px)',
+) !default;

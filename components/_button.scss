@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.component-example {
+    position: relative;
+    overflow: hidden;
+
+    .content {
+        float: left;
+        width: 200px;
+    }
+
+    .button.next {
+        position: absolute;
+        right: 0;
+    }
+
+    .button.previous {
+        position: absolute;
+        left: 0;
+    }
+}

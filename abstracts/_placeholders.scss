@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass placeholders.
+// -----------------------------------------------------------------------------
+// be careful when using extends since it can output outrageously long selectors
+// consider using a mixin here instead, if you don't know what you are doing
+
+@mixin reset-input{
+
+}
