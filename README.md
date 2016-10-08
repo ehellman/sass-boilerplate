@@ -1,28 +1,8 @@
 # sass-boilerplate
-A boilerplate for Sass
 
-````
-asset/
+### Description
 
-layout/
-    layout.scss
-    header.scss
-    navigation.scss
-module/
-    buttons.scss
-page/
-    page.scss
-type/
-    font.scss
-    type.scss
-utility/
-    breakpoints.scss
-    extends.scss
-    functions.scss
-    mixin.scss
-    normalize.scss
-    variables.scss
-vendor/
+This is a Sass boilerplate made up from several different existing boilerplates, adapted and adjusted according to my own real world needs. This is how I start every project where I use Sass.
 
-app.scss
-````
+### app.scss
+The main file named `app.scss` should be the only Sass file from the whole code base not to begin with an underscore. This file should not contain anything but `@import` and comments.
